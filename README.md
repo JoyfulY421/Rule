@@ -1,5 +1,7 @@
 # Rule
 
+简易教程https://yattazen.com/tutorial/clash-custom-config.html
+
 纯自用
 
 DNS泄露测试
