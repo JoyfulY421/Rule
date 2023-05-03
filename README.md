@@ -1,5 +1,22 @@
 # Rule
 
+UBlock Rules
+
+`https://easylist-downloads.adblockplus.org/easylist.txt`
+
+`https://easylist-downloads.adblockplus.org/easylistchina.txt`
+
+`https://easylist-downloads.adblockplus.org/easyprivacy.txt`
+
+`https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt`
+
+`https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt`
+
+`https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt`
+
+`https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt`
+
+
 简易教程https://yattazen.com/tutorial/clash-custom-config.html
 
 纯自用
