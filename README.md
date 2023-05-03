@@ -1,5 +1,7 @@
 # Rule
 
+`https://gitlab.com/cleanflash/installer/-/tree/master`
+
 UBlock Rules
 
 `https://easylist-downloads.adblockplus.org/easylist.txt`
