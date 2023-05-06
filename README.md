@@ -75,4 +75,4 @@ Clash后端配置：
 | `GEOSITE` | [domain-list-community](https://github.com/v2fly/domain-list-community) 是由 v2fly 社区维护的域名列表 |
 | `PROCESS-NAME` | 进程名称，例如 `PROCESS-NAME,Telegram`，仅对本机进程有效 |
 | `PROCESS-PATH` | 进程路径，例如 `PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram`，仅对本机进程有效 |
-| `SCRIPT` | 
+| `更多` | https://stash.wiki |
