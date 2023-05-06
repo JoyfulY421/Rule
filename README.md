@@ -69,7 +69,7 @@ Clash后端配置：
 | `DOMAIN-KEYWORD` | 关键词匹配域名，例如 `DOMAIN-KEYWORD,google` 匹配 `google.com` 和 `google.jp` |
 | `GEOIP` | 通过 MaxMind GeoIP 匹配国家代码，比如 `GEOIP,CN`，可以添加 `no-resolve` 避免触发 DNS 解析 |
 | `IP-ASN` | 通过 IP 自治系统编号，比如 `IP-ASN,714`，可以添加 `no-resolve` 避免触发 DNS 解析 |
-| `IP-CIDR /IP-CIdR6` | IP CIDR 范围，可以添加 `no-resolve` 避免触发 DNS 解析 |
+| `IP-CIDR / IP-CIdR6` | IP CIDR 范围，可以添加 `no-resolve` 避免触发 DNS 解析 |
 | `DST-PORT` | 目标端口 |
 | `RULE-SET` | 在引用大量规则时请使用[规则集合](https://stash.wiki/rules/rule-set) |
 | `GEOSITE` | [domain-list-community](https://github.com/v2fly/domain-list-community) 是由 v2fly 社区维护的域名列表 |
