@@ -1,6 +1,8 @@
 # Rule
 
-`https://gitlab.com/cleanflash/installer/-/tree/master`
+使用ACL4SSR规则
+
+https://acl4ssr-sub.github.io/
 
 UBlock Rules
 
@@ -17,25 +19,6 @@ UBlock Rules
 `https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt`
 
 `https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt`
-
-
-简易教程https://yattazen.com/tutorial/clash-custom-config.html
-
-纯自用
-
-DNS泄露测试
-https://ipleak.net/
-
-使用ACL4SSR规则
-https://acl4ssr-sub.github.io/
-
-https://bianyuan.xyz/
-
-https://`后端配置`&url=`节点`&config=`远程配置`&`后面均为基本参数`filename=`输出文件名`&`······`
-
-Clash后端配置：
-
-`api.bianyuan.xyz/sub?`target=clash `客户端Clash、Surfboard、QuantumultX······`
 
 `pub-api-1.bianyuan.xyz/sub?`target=clash 
 
