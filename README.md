@@ -20,7 +20,6 @@ UBlock Rules
 
 `https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt`
 
-`pub-api-1.bianyuan.xyz/sub?`target=clash 
 
 远程配置：
 
