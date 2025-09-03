@@ -1,19 +1,19 @@
 payload:
   # 阿里
-*.pc528.net
-*.pc520.net
-*.cadzxw.com
-*.cravatar.cn
-*.cravatar.com
-*.3bhr.cscec.com
-*.3jyx.cn
-*.bms.cscec3b-iti.com
-*.cscec3b.21tb.com
-*.digitalconstruction.cscec3b.com.cn
-*.dmp.cscec3b.com.cn
-*.dop-auth.cscec3b-iti.com
-*.fip.cscec.com
-*.oa3b.cscec.com
-*.portal.cscec3b.com.cn
-*.scm.cscec3b-iti.com
-*.sz.cscec3bsz.com.cn
+  - DOMAIN-SUFFIX,pc528.net
+  - DOMAIN-SUFFIX,pc520.net
+  - DOMAIN-SUFFIX,cadzxw.com
+  - DOMAIN-SUFFIX,cravatar.cn
+  - DOMAIN-SUFFIX,cravatar.com
+  - DOMAIN-SUFFIX,3bhr.cscec.com
+  - DOMAIN-SUFFIX,3jyx.cn
+  - DOMAIN-SUFFIX,bms.cscec3b-iti.com
+  - DOMAIN-SUFFIX,cscec3b.21tb.com
+  - DOMAIN-SUFFIX,digitalconstruction.cscec3b.com.cn
+  - DOMAIN-SUFFIX,dmp.cscec3b.com.cn
+  - DOMAIN-SUFFIX,dop-auth.cscec3b-iti.com
+  - DOMAIN-SUFFIX,fip.cscec.com
+  - DOMAIN-SUFFIX,oa3b.cscec.com
+  - DOMAIN-SUFFIX,portal.cscec3b.com.cn
+  - DOMAIN-SUFFIX,scm.cscec3b-iti.com
+  - DOMAIN-SUFFIX,sz.cscec3bsz.com.cn
