@@ -9,13 +9,11 @@ payload:
   - DOMAIN-SUFFIX,szbdyd.com
   - DOMAIN-SUFFIX,uhabo.com
   - DOMAIN-SUFFIX,xycdn.com
-
   # 视频平台 CDN
   - DOMAIN-SUFFIX,mcdn.bilivideo.cn
   - DOMAIN-SUFFIX,onethingpcs.com
   - DOMAIN-SUFFIX,pcdn.xmcdn.com
   - DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
-
   # P2P 相关域名
   - DOMAIN,p2p.huya.com
   - DOMAIN,p2p.qq.com
@@ -24,12 +22,10 @@ payload:
   - DOMAIN,p2pupgrade.gamedl.qq.com
   - DOMAIN,pcdn.yximgs.com
   - DOMAIN,stun.hitv.com
-
   # 正则匹配规则
   - DOMAIN-REGEX,.*pcdn.*biliapi.net
   - DOMAIN-REGEX,.*pcdn.*youku.com
   - DOMAIN-REGEX,.*p2p.*qq.com
-
   # 斗鱼规则
   - DOMAIN-SUFFIX,stun.douyucdn.cn
   - DOMAIN-SUFFIX,stun1.douyucdn.cn
@@ -44,8 +40,6 @@ payload:
   - DOMAIN-SUFFIX,p2plive-ws.douyucdn.cn
   - DOMAIN-SUFFIX,p2plog.douyucdn.cn
   - DOMAIN-SUFFIX,p2pvod-ws.douyucdn.cn
-
-
   # IP段清单
   - IP-CIDR,27.221.70.0/24,no-resolve
   - IP-CIDR,36.5.81.0/24,no-resolve
