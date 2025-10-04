@@ -1,4 +1,5 @@
 payload:
+  # PCDN域名或者网
   # 通用 CDN 域名
   - DOMAIN-SUFFIX,bsccdn.net
   - DOMAIN-SUFFIX,gjfzpt.cn
