@@ -1,19 +1,10 @@
 payload:
+  # MicrosoftEdge
   - DOMAIN,msedge.api.cdp.microsoft.com
   - DOMAIN,iecvlist.microsoft.com
   - DOMAIN,edge.microsoft.com
   - DOMAIN,edge.activity.windows.com
-  - DOMAIN-KEYWORD,pc528
-  - DOMAIN-KEYWORD,pc520
-  - DOMAIN-KEYWORD,cadzxw
-  - DOMAIN-KEYWORD,cravatar
-  - DOMAIN-KEYWORD,3jyx
-  - DOMAIN-KEYWORD,cccyun
-  - DOMAIN-KEYWORD,pc528
-  - DOMAIN-KEYWORD,cscec
-  - DOMAIN-KEYWORD,mefcl
-  - DOMAIN-KEYWORD,gitee
-  - DOMAIN-KEYWORD,rainyun
+  # GovernmentCN
   - DOMAIN-SUFFIX,91huayi.cn
   - DOMAIN-SUFFIX,91huayi.com
   - DOMAIN-SUFFIX,91huayi.net
@@ -30,3 +21,15 @@ payload:
   - DOMAIN-SUFFIX,sqpx.org
   - DOMAIN-SUFFIX,wsglw.com
   - DOMAIN-SUFFIX,wsglw.net
+  # 个人
+  - DOMAIN-KEYWORD,pc528
+  - DOMAIN-KEYWORD,pc520
+  - DOMAIN-KEYWORD,cadzxw
+  - DOMAIN-KEYWORD,cravatar
+  - DOMAIN-KEYWORD,3jyx
+  - DOMAIN-KEYWORD,cccyun
+  - DOMAIN-KEYWORD,pc528
+  - DOMAIN-KEYWORD,cscec
+  - DOMAIN-KEYWORD,mefcl
+  - DOMAIN-KEYWORD,gitee
+  - DOMAIN-KEYWORD,rainyun
