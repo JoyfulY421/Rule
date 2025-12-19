@@ -1,113 +1,39 @@
-#华为
+#华为应用市场相关域名
 payload:
-  #华为应用市场相关域名：
-  - DOMAIN-SUFFIX,appgallery.cloud.huawei.com
-  - DOMAIN-SUFFIX,appgallery.cloud.huawei.com.cn
-  - DOMAIN-SUFFIX,appgallery.cloud.huawei.asia
-  - DOMAIN-SUFFIX,appgallery.cloud.huawei.eu
-  - DOMAIN-SUFFIX,appdlssl.dbankcdn.com
-  - DOMAIN-SUFFIX,appdlcbak-drcn.hispace.hicloud.com
-  - DOMAIN-SUFFIX,appdl*-dr*.dbankcdn.com
-  - DOMAIN-SUFFIX,appdl*-dr*.dbankcdn.cn
-  - DOMAIN-SUFFIX,appdlc-drcn.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,appimg.dbankcdn.com
-  - DOMAIN-SUFFIX,appoptimize-drcn.dbankcdn.cn
-  - DOMAIN-SUFFIX,atues-drru.hispace.dbankcloud.ru
-  - DOMAIN-SUFFIX,cges-drcn.cg.dbankcloud.cn
-  - DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
-  - DOMAIN-SUFFIX,css-complain-drcn.platform.dbankcloud.cn
-  - DOMAIN-SUFFIX,forum-api-dra.jos.dbankcloud.cn
-  - DOMAIN-SUFFIX,gs-dra.game.dbankcloud.cn
-  - DOMAIN-SUFFIX,gwap-dra.game.dbankcloud.cn
-  - DOMAIN-SUFFIX,jwap-dra.jos.dbankcloud.cn
-  - DOMAIN-SUFFIX,jxs-dra.jos.dbankcloud.cn
-  - DOMAIN-SUFFIX,metrics1-drcn.dt.dbankcloud.cn
-  - DOMAIN-SUFFIX,metrics-dra.dt.dbankcloud.cn
-  - DOMAIN-SUFFIX,metrics-dre.dt.dbankcloud.cn
-  - DOMAIN-SUFFIX,pkginstaller-dr*.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,store.hispace.hicloud.com
-  - DOMAIN-SUFFIX,store-at-dre.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,store-drcn.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,store-dra.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,store-dre.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,store-dra.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,store-dre.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,store-drru.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,store1.hispace.hicloud.com
-  - DOMAIN-SUFFIX,store2.hispace.hicloud.com
-  - DOMAIN-SUFFIX,store3.hispace.hicloud.com
-  - DOMAIN-SUFFIX,store-dru.hispace.hicloud.com
-  - DOMAIN-SUFFIX,wap1.hispace.hicloud.com
-  - DOMAIN-SUFFIX,wap2.hispace.hicloud.com
-  - DOMAIN-SUFFIX,wap3.hispace.hicloud.com
-  - DOMAIN-SUFFIX,wap-drru.hispace.hicloud.com
-  - DOMAIN-SUFFIX,wap-dra.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,wap-drcn.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,wap-dre.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,wap-drru.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,jwap-drcn.jos.dbankcloud.cn
-  - DOMAIN-SUFFIX,gwap-drcn.game.dbankcloud.com
-  - DOMAIN-SUFFIX,jwap-dra.jos.dbankcloud.com
-  - DOMAIN-SUFFIX,gwap-dra.game.dbankcloud.com/
-  - DOMAIN-SUFFIX,jwap-dre.jos.dbankcloud.com
-  - DOMAIN-SUFFIX,gwap-dre.game.dbankcloud.com
-  - DOMAIN-SUFFIX,jwap-drru.jos.dbankcloud.com
-  - DOMAIN-SUFFIX,gwap-drru.game.dbankcloud.com
-  - DOMAIN-SUFFIX,uc1.hispace.hicloud.com
-  - DOMAIN-SUFFIX,uc2.hispace.hicloud.com
-  - DOMAIN-SUFFIX,uc3.hispace.hicloud.com
-  - DOMAIN-SUFFIX,uc-drru.hispace.hicloud.com
-  - DOMAIN-SUFFIX,hispace.hicloud.com
-  - DOMAIN-SUFFIX,uc-drcn.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,uc-dra.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,uc-dre.hispace.dbankcloud.cn
-  - DOMAIN-SUFFIX,uc-dra.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,uc-dre.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,uc-drru.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,terms1.hicloud.com
-  - DOMAIN-SUFFIX,terms3.hicloud.com
-  - DOMAIN-SUFFIX,terms7.hicloud.com
-  - DOMAIN-SUFFIX,terms-dra.platform.hicloud.com
-  - DOMAIN-SUFFIX,terms-drcn.platform.hicloud.com
-  - DOMAIN-SUFFIX,terms-dre.platform.hicloud.com
-  - DOMAIN-SUFFIX,terms-drru.platform.hicloud.com
-  - DOMAIN-SUFFIX,terms-drsx.platform.hicloud.com
-  - DOMAIN-SUFFIX,data-drcn.push.dbankcloud.com
-  - DOMAIN-SUFFIX,data-dra.push.dbankcloud.com
-  - DOMAIN-SUFFIX,data-dre.push.dbankcloud.com
-  - DOMAIN-SUFFIX,data-drru.push.dbankcloud.com
-  - DOMAIN-SUFFIX,terms-drcn.platform.dbankcloud.cn
-  - DOMAIN-SUFFIX,terms-dra.platform.dbankcloud.cn
-  - DOMAIN-SUFFIX,terms-dre.platform.dbankcloud.cn
-  - DOMAIN-SUFFIX,terms-drru.security.dbankcloud.ru
-  - DOMAIN-SUFFIX,terms-dra.platform.dbankcloud.com
-  - DOMAIN-SUFFIX,terms-dre.platform.dbankcloud.com
-  - DOMAIN-SUFFIX,terms-drru.platform.dbankcloud.com
-  - DOMAIN-SUFFIX,account.link.cloud.huawei.com
-  - DOMAIN-SUFFIX,connectivitycheck.cbg-app.huawei.com.cn
-  - DOMAIN-SUFFIX,connectivitycheck.cbg-app.huawei.com
-  - DOMAIN-SUFFIX,connectivitycheck.platform.dbankcloud.com
-  - DOMAIN-SUFFIX,wirelessspeedy-drcn.platform.dbankcloud.cn
-  - DOMAIN-SUFFIX,wirelessspeedy-drcn.platform.hicloud.com
-  - DOMAIN-SUFFIX,dps-drcn.jos.dbankcloud.cn/dps/openapi
-  - DOMAIN-SUFFIX,oauth-login.platform.hicloud.com
-  - DOMAIN-SUFFIX,id.cloud.huawei.com
-  - DOMAIN-SUFFIX,login.cloud.huawei.com
-  - DOMAIN-SUFFIX,appgallery.cloud.huawei.ru
-  - DOMAIN-SUFFIX,store-drru.hispace.dbankcloud.ru
-  - DOMAIN-SUFFIX,stores1.hispace.hicloud.com
-  - DOMAIN-SUFFIX,pkginstaller-ovs.hispace.dbankcloud.com
-  - DOMAIN-SUFFIX,aspiegel.com
-  - DOMAIN-SUFFIX,dbankcdn.cn
+  # # Huawei 官方主域（明确、安全）
+  # - DOMAIN-SUFFIX,huawei.com
+  # - DOMAIN-SUFFIX,huawei.com.cn
+  # - DOMAIN-SUFFIX,huawei.asia
+  # - DOMAIN-SUFFIX,huawei.ru
+  # - DOMAIN-SUFFIX,huawei.en
+
+  # # HiCloud / HiSpace（华为云与应用市场）
+  # - DOMAIN-SUFFIX,hicloud.com
+  # - DOMAIN-SUFFIX,hispace.hicloud.com
+
+  # # AppGallery / 商店核心
+  # - DOMAIN,appgallery.cloud.huawei.com
+  # - DOMAIN,store.hispace.hicloud.com
+
+  # # Huawei 账号 / 登录 / OAuth
+  # - DOMAIN,account.link.cloud.huawei.com
+  # - DOMAIN,id.cloud.huawei.com
+  # - DOMAIN,login.cloud.huawei.com
+  # - DOMAIN,oauth-login.platform.hicloud.com
+
+  # DBank CDN / Cloud（保守：只用后缀）
   - DOMAIN-SUFFIX,dbankcdn.com
+  - DOMAIN-SUFFIX,dbankcdn.cn
   - DOMAIN-SUFFIX,dbankcdn.ru
-  - DOMAIN-SUFFIX,dbankcloud.cn
-  - DOMAIN-SUFFIX,dbankcloud.com
-  - DOMAIN-SUFFIX,dbankcloud.ru
-  - DOMAIN-SUFFIX,hicloud.com
-  - DOMAIN-SUFFIX,huawei.asia
-  - DOMAIN-SUFFIX,huawei.com
-  - DOMAIN-SUFFIX,huawei.com.cn
-  - DOMAIN-SUFFIX,huawei.en
-  - DOMAIN-SUFFIX,huawei.ru
-  - DOMAIN-SUFFIX,vmall.com
+  # - DOMAIN-SUFFIX,dbankcloud.com
+  # - DOMAIN-SUFFIX,dbankcloud.cn
+  # - DOMAIN-SUFFIX,dbankcloud.ru
+
+  # # 网络检测（精确）
+  # - DOMAIN,connectivitycheck.cbg-app.huawei.com
+  # - DOMAIN,connectivitycheck.cbg-app.huawei.com.cn
+  # - DOMAIN,connectivitycheck.platform.dbankcloud.com
+
+  # # 华为商城
+  # - DOMAIN-SUFFIX,vmall.com
+
