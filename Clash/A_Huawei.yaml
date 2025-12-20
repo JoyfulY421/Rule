@@ -1,72 +1,20 @@
 #华为应用市场相关域名
 payload:
-  # ==========AppGallery 入口==========
-  - DOMAIN,appgallery.cloud.huawei.com
-  - DOMAIN,appgallery.cloud.huawei.com.cn
-  - DOMAIN,appgallery.cloud.huawei.asia
-  - DOMAIN,appgallery.cloud.huawei.eu
-  - DOMAIN,appgallery.cloud.huawei.ru
-  # ==========下载 & CDN==========
-  # 下载核心
-  - DOMAIN,appdlssl.dbankcdn.com
-  - DOMAIN,appimg.dbankcdn.com
+  # AppGallery 主入口（仅市场）
+  - DOMAIN-REGEX,^appgallery\.cloud\.huawei\.(com|com\.cn|asia|eu|ru)$
 
-  # 下载调度（缩写但不放宽）
-  - DOMAIN-REGEX,^appdl[^.]*-dr[^.]*\.dbankcdn\.(com|cn)$
+  # 应用包下载节点（仅 appdl / appdlssl）
+  - DOMAIN-REGEX,^appdl([a-z0-9-]*)-dr[a-z0-9]*\.dbankcdn\.(com|cn)$
+  - DOMAIN-REGEX,^appdlssl\.dbankcdn\.com$
 
-  # CDN 兜底
-  - DOMAIN-SUFFIX,dbankcdn.com
-  - DOMAIN-SUFFIX,dbankcdn.cn
-  - DOMAIN-SUFFIX,dbankcdn.ru
-  # ==========HiSpace / 商店 / 安装器==========
-  # 安装器
-  #- DOMAIN-REGEX,^pkginstaller[^.]*\.hispace\.dbankcloud\.com$
-  #- DOMAIN-REGEX,^pkginstaller[^.]*\.hispace\.dbankcloud\.cn$
+  # 安装器（严格限定）
+  - DOMAIN-REGEX,^pkginstaller-[a-z0-9-]+\.hispace\.dbankcloud\.cn$
+  - DOMAIN-REGEX,^pkginstaller-ovs\.hispace\.dbankcloud\.(com|ru)$
 
-  # 商店（hispace）
-  #- DOMAIN-SUFFIX,hispace.hicloud.com
-  #- DOMAIN-SUFFIX,hispace.dbankcloud.com
-  #- DOMAIN-SUFFIX,hispace.dbankcloud.cn
-  #- DOMAIN-SUFFIX,hispace.dbankcloud.ru
-  # ==========WAP / UC / Web 接口==========
-  # WAP
-  #- DOMAIN-REGEX,^wap\d+\.hispace\.hicloud\.com$
-  #- DOMAIN-SUFFIX,wap.hispace.dbankcloud.cn
-  #- DOMAIN-SUFFIX,wap.hispace.dbankcloud.com
-
-  # UC
-  #- DOMAIN-REGEX,^uc\d+\.hispace\.hicloud\.com$
-  #- DOMAIN-SUFFIX,uc.hispace.dbankcloud.cn
-  #- DOMAIN-SUFFIX,uc.hispace.dbankcloud.com
-  # ==========JOS / GAME / API==========
-  # JOS
-  #- DOMAIN-SUFFIX,jos.dbankcloud.cn
-  #- DOMAIN-SUFFIX,jos.dbankcloud.com
-
-  # GAME
-  #- DOMAIN-SUFFIX,game.dbankcloud.cn
-  #- DOMAIN-SUFFIX,game.dbankcloud.com
-  # ==========条款 / 统计 / 推送==========
-  # 条款
-  #- DOMAIN-SUFFIX,platform.hicloud.com
-  #- DOMAIN-SUFFIX,platform.dbankcloud.cn
-  #- DOMAIN-SUFFIX,platform.dbankcloud.com
-
-  # 统计 / 推送
-  #- DOMAIN-SUFFIX,dt.dbankcloud.cn
-  #- DOMAIN-SUFFIX,push.dbankcloud.com
-  # ==========账号 / 登录 / 检测==========
-  #- DOMAIN-SUFFIX,cloud.huawei.com
-  #- DOMAIN,connectivitycheck.cbg-app.huawei.com
-  #- DOMAIN,connectivitycheck.cbg-app.huawei.com.cn
-  #- DOMAIN,connectivitycheck.platform.dbankcloud.com
-  # ==========最终兜底==========
-  #- DOMAIN-SUFFIX,hicloud.com
-  #- DOMAIN-SUFFIX,huawei.com
-  #- DOMAIN-SUFFIX,huawei.com.cn
-  #- DOMAIN-SUFFIX,huawei.asia
-  #- DOMAIN-SUFFIX,huawei.ru
-  #- DOMAIN-SUFFIX,dbankcloud.com
-  #- DOMAIN-SUFFIX,dbankcloud.cn
-  #- DOMAIN-SUFFIX,dbankcloud.ru
-  #- DOMAIN-SUFFIX,vmall.com
+  # HiSpace 市场页面（store / wap / uc）
+  - DOMAIN-REGEX,^store[0-9-]*\.hispace\.hicloud\.com$
+  - DOMAIN-REGEX,^store-[a-z-]+\.hispace\.dbankcloud\.(com|cn|ru)$
+  - DOMAIN-REGEX,^wap[0-9-]*\.hispace\.hicloud\.com$
+  - DOMAIN-REGEX,^wap-[a-z-]+\.hispace\.dbankcloud\.(com|cn|ru)$
+  - DOMAIN-REGEX,^uc[0-9-]*\.hispace\.hicloud\.com$
+  - DOMAIN-REGEX,^uc-[a-z-]+\.hispace\.dbankcloud\.(com|cn|ru)$
