@@ -1,39 +1,72 @@
 #华为应用市场相关域名
 payload:
-  # # Huawei 官方主域（明确、安全）
-  # - DOMAIN-SUFFIX,huawei.com
-  # - DOMAIN-SUFFIX,huawei.com.cn
-  # - DOMAIN-SUFFIX,huawei.asia
-  # - DOMAIN-SUFFIX,huawei.ru
-  # - DOMAIN-SUFFIX,huawei.en
+  # ==========AppGallery 入口==========
+  - DOMAIN,appgallery.cloud.huawei.com
+  - DOMAIN,appgallery.cloud.huawei.com.cn
+  - DOMAIN,appgallery.cloud.huawei.asia
+  - DOMAIN,appgallery.cloud.huawei.eu
+  - DOMAIN,appgallery.cloud.huawei.ru
+  # ==========下载 & CDN==========
+  # 下载核心
+  - DOMAIN,appdlssl.dbankcdn.com
+  - DOMAIN,appimg.dbankcdn.com
 
-  # # HiCloud / HiSpace（华为云与应用市场）
-  # - DOMAIN-SUFFIX,hicloud.com
-  # - DOMAIN-SUFFIX,hispace.hicloud.com
+  # 下载调度（缩写但不放宽）
+  - DOMAIN-REGEX,^appdl[^.]*-dr[^.]*\.dbankcdn\.(com|cn)$
 
-  # # AppGallery / 商店核心
-  # - DOMAIN,appgallery.cloud.huawei.com
-  # - DOMAIN,store.hispace.hicloud.com
-
-  # # Huawei 账号 / 登录 / OAuth
-  # - DOMAIN,account.link.cloud.huawei.com
-  # - DOMAIN,id.cloud.huawei.com
-  # - DOMAIN,login.cloud.huawei.com
-  # - DOMAIN,oauth-login.platform.hicloud.com
-
-  # DBank CDN / Cloud（保守：只用后缀）
+  # CDN 兜底
   - DOMAIN-SUFFIX,dbankcdn.com
   - DOMAIN-SUFFIX,dbankcdn.cn
   - DOMAIN-SUFFIX,dbankcdn.ru
-  # - DOMAIN-SUFFIX,dbankcloud.com
-  # - DOMAIN-SUFFIX,dbankcloud.cn
-  # - DOMAIN-SUFFIX,dbankcloud.ru
+  # ==========HiSpace / 商店 / 安装器==========
+  # 安装器
+  #- DOMAIN-REGEX,^pkginstaller[^.]*\.hispace\.dbankcloud\.com$
+  #- DOMAIN-REGEX,^pkginstaller[^.]*\.hispace\.dbankcloud\.cn$
 
-  # # 网络检测（精确）
-  # - DOMAIN,connectivitycheck.cbg-app.huawei.com
-  # - DOMAIN,connectivitycheck.cbg-app.huawei.com.cn
-  # - DOMAIN,connectivitycheck.platform.dbankcloud.com
+  # 商店（hispace）
+  #- DOMAIN-SUFFIX,hispace.hicloud.com
+  #- DOMAIN-SUFFIX,hispace.dbankcloud.com
+  #- DOMAIN-SUFFIX,hispace.dbankcloud.cn
+  #- DOMAIN-SUFFIX,hispace.dbankcloud.ru
+  # ==========WAP / UC / Web 接口==========
+  # WAP
+  #- DOMAIN-REGEX,^wap\d+\.hispace\.hicloud\.com$
+  #- DOMAIN-SUFFIX,wap.hispace.dbankcloud.cn
+  #- DOMAIN-SUFFIX,wap.hispace.dbankcloud.com
 
-  # # 华为商城
-  # - DOMAIN-SUFFIX,vmall.com
+  # UC
+  #- DOMAIN-REGEX,^uc\d+\.hispace\.hicloud\.com$
+  #- DOMAIN-SUFFIX,uc.hispace.dbankcloud.cn
+  #- DOMAIN-SUFFIX,uc.hispace.dbankcloud.com
+  # ==========JOS / GAME / API==========
+  # JOS
+  #- DOMAIN-SUFFIX,jos.dbankcloud.cn
+  #- DOMAIN-SUFFIX,jos.dbankcloud.com
 
+  # GAME
+  #- DOMAIN-SUFFIX,game.dbankcloud.cn
+  #- DOMAIN-SUFFIX,game.dbankcloud.com
+  # ==========条款 / 统计 / 推送==========
+  # 条款
+  #- DOMAIN-SUFFIX,platform.hicloud.com
+  #- DOMAIN-SUFFIX,platform.dbankcloud.cn
+  #- DOMAIN-SUFFIX,platform.dbankcloud.com
+
+  # 统计 / 推送
+  #- DOMAIN-SUFFIX,dt.dbankcloud.cn
+  #- DOMAIN-SUFFIX,push.dbankcloud.com
+  # ==========账号 / 登录 / 检测==========
+  #- DOMAIN-SUFFIX,cloud.huawei.com
+  #- DOMAIN,connectivitycheck.cbg-app.huawei.com
+  #- DOMAIN,connectivitycheck.cbg-app.huawei.com.cn
+  #- DOMAIN,connectivitycheck.platform.dbankcloud.com
+  # ==========最终兜底==========
+  #- DOMAIN-SUFFIX,hicloud.com
+  #- DOMAIN-SUFFIX,huawei.com
+  #- DOMAIN-SUFFIX,huawei.com.cn
+  #- DOMAIN-SUFFIX,huawei.asia
+  #- DOMAIN-SUFFIX,huawei.ru
+  #- DOMAIN-SUFFIX,dbankcloud.com
+  #- DOMAIN-SUFFIX,dbankcloud.cn
+  #- DOMAIN-SUFFIX,dbankcloud.ru
+  #- DOMAIN-SUFFIX,vmall.com
