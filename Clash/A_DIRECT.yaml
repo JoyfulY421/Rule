@@ -1,4 +1,49 @@
 payload:
+  # ====== Program Files / Program Files (x86) / 任意盘符 / 任意路径 ======
+  # 7-Zip / Bandizip / WinRAR
+  - PROCESS-PATH-REGEX,.*\\7-Zip\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Bandizip\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\WinRAR\\.*\.exe,DIRECT
+  # Kingsoft / WPS / Tencent / Netease
+  - PROCESS-PATH-REGEX,.*\\Kingsoft\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Tencent\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\TencentDocs\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Netease\\.*\.exe,DIRECT
+  # ByteDance / DingDing / WXWork / Kimi
+  - PROCESS-PATH-REGEX,.*\\ByteDance\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\DingDing\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\WXWorkLocal\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Kimi\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Kimi 智能助手\\.*\.exe,DIRECT
+  # Huorong / Senselock / senseshield
+  - PROCESS-PATH-REGEX,.*\\Huorong\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Senselock\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\senseshield\\.*\.exe,DIRECT
+  # Razer / Rapoo / GIGABYTE / KTC
+  - PROCESS-PATH-REGEX,.*\\Razer\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Rapoo\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\GIGABYTE\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\KTC-Monitor Control Center\\.*\.exe,DIRECT
+  # RustDesk / ToDesk / TeamSpeak / VMware
+  - PROCESS-PATH-REGEX,.*\\RustDesk\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\ToDesk\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\TeamSpeak 3 Client\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\VMware\\.*\.exe,DIRECT
+  # Autodesk / Glodon / CAD / Grandsoft
+  - PROCESS-PATH-REGEX,.*\\Autodesk\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Glodon\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\CADReader\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Grandsoft\\.*\.exe,DIRECT
+  # HiSuite / GPSoftware / BootGraph / Tangent
+  - PROCESS-PATH-REGEX,.*\\HiSuite\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\GPSoftware\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\BootGraph\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\Tangent\\.*\.exe,DIRECT
+  # AppData 下的程序
+  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\baidu\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\aDrive\\.*\.exe,DIRECT
+  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\CD Projekt Red\\.*\.exe,DIRECT
+  # ====== 放在所有 PROXY 规则之前 ======
   # MicrosoftEdge
   #- DOMAIN,msedge.api.cdp.microsoft.com
   #- DOMAIN,iecvlist.microsoft.com
