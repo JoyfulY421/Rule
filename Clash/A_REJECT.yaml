@@ -1,4 +1,8 @@
 payload:
+  # Adobe屏蔽域名
+  - DOMAIN-SUFFIX,ic.adobe.io
+  - DOMAIN-SUFFIX,fgaq3pq1o9.adobe.io
+  - DOMAIN-SUFFIX,ij0gdyrfka.adobe.io
   # PCDN域名或者网
   # 通用 CDN 域名
   - DOMAIN-SUFFIX,bsccdn.net
