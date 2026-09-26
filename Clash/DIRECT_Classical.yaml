@@ -211,3 +211,5 @@ payload:
   - DOMAIN-KEYWORD,rainyun
   - DOMAIN-KEYWORD,yangjibao
   - DOMAIN,avmark.lisect.com
+  - DOMAIN-SUFFIX,smtp
+  - DOMAIN-KEYWORD,aria2
