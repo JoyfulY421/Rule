@@ -49,23 +49,6 @@ payload:
   #- DOMAIN,iecvlist.microsoft.com
   #- DOMAIN,edge.microsoft.com
   #- DOMAIN,edge.activity.windows.com
-  # GovernmentCN
-  - DOMAIN-SUFFIX,91huayi.cn
-  - DOMAIN-SUFFIX,91huayi.com
-  - DOMAIN-SUFFIX,91huayi.net
-  - DOMAIN-SUFFIX,gov.cn
-  - DOMAIN-SUFFIX,heart301.cn
-  - DOMAIN-SUFFIX,henancme.net
-  - DOMAIN-SUFFIX,huayi.cn
-  - DOMAIN-SUFFIX,huayiweibo.com
-  - DOMAIN-SUFFIX,huayiyuan.com
-  - DOMAIN-SUFFIX,robot301.net
-  - DOMAIN-SUFFIX,roboticsurg301.net
-  - DOMAIN-SUFFIX,scncrc.com
-  - DOMAIN-SUFFIX,shiyanma.org.cn
-  - DOMAIN-SUFFIX,sqpx.org
-  - DOMAIN-SUFFIX,wsglw.com
-  - DOMAIN-SUFFIX,wsglw.net
   # 本地局域网地址
   # - DOMAIN,asusrouter.com
   # - DOMAIN,instant.arubanetworks.com
@@ -209,11 +192,11 @@ payload:
   # - IP-CIDR6,fe80::/10,no-resolve
   # - IP-CIDR6,ff00::/8,no-resolve
   # Public Direct CDN 公共直连
-  - DOMAIN-SUFFIX,baomitu.com
-  - DOMAIN-SUFFIX,bootcss.com
-  - DOMAIN-SUFFIX,jiasule.com
-  - DOMAIN-SUFFIX,staticfile.org
-  - DOMAIN-SUFFIX,upaiyun.com
+  #- DOMAIN-SUFFIX,baomitu.com
+  #- DOMAIN-SUFFIX,bootcss.com
+  #- DOMAIN-SUFFIX,jiasule.com
+  #- DOMAIN-SUFFIX,staticfile.org
+  #- DOMAIN-SUFFIX,upaiyun.com
   # 个人
   - DOMAIN-KEYWORD,pc528
   - DOMAIN-KEYWORD,pc520
@@ -227,3 +210,4 @@ payload:
   - DOMAIN-KEYWORD,gitee
   - DOMAIN-KEYWORD,rainyun
   - DOMAIN-KEYWORD,yangjibao
+  - DOMAIN,avmark.lisect.com
