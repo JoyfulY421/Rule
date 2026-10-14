@@ -91,7 +91,15 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openai
-  - PROCESS-NAME,com.openai.chatgpt
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
   - IP-ASN,20473,no-resolve
+  # ===== AI 应用进程 =====
+  # Android
+  - PROCESS-NAME,com.openai.chatgpt
+  - PROCESS-NAME,com.anthropic.claude
+  - PROCESS-NAME,com.google.android.apps.bard
+  - PROCESS-NAME,ai.x.grok
+  - PROCESS-NAME,ai.perplexity.app
+  # Windows/macOS/Linux
+  - PROCESS-NAME-REGEX,(?i).*(chatgpt|openai|claude|anthropic|gemini|grok|perplexity).*
