@@ -1,24 +1,80 @@
 payload:
   # ====== Program Files / Program Files (x86) / 任意盘符 / 任意路径 ======
-rules:
+  # ==========================================
+  # 第一部分：精确进程名直连（优先级最高，不受安装路径影响）
+  # ==========================================
+
   # 压缩软件 (7-Zip / Bandizip / WinRAR)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(7-Zip|Bandizip|WinRAR)\\.*\.exe$,DIRECT'
-  # 办公与社交 (Kingsoft / WPS / Tencent / Netease)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(Kingsoft|Tencent|TencentDocs|Netease)\\.*\.exe$,DIRECT'
-  # 字节 / 钉钉 / 企业微信 / Kimi
-  - 'PROCESS-PATH-REGEX,(?i).*\\(ByteDance|DingDing|WXWorkLocal|Kimi|Kimi 智能助手)\\.*\.exe$,DIRECT'
-  # 安全与加密狗驱动 (Huorong / Senselock / senseshield)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(Huorong|Senselock|senseshield)\\.*\.exe$,DIRECT'
-  # 外设与硬件控制 (Razer / Rapoo / GIGABYTE / KTC)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(Razer|Rapoo|GIGABYTE|KTC-Monitor Control Center)\\.*\.exe$,DIRECT'
+  - PROCESS-NAME,7zFM.exe,DIRECT
+  - PROCESS-NAME,7zG.exe,DIRECT
+  - PROCESS-NAME,7z.exe,DIRECT
+  - PROCESS-NAME,Bandizip.exe,DIRECT
+  - PROCESS-NAME,WinRAR.exe,DIRECT
+
+  # 办公与社交 (WPS / 腾讯系 / 网易系)
+  - PROCESS-NAME,wps.exe,DIRECT
+  - PROCESS-NAME,et.exe,DIRECT
+  - PROCESS-NAME,wpp.exe,DIRECT
+  - PROCESS-NAME,wpscloudsvr.exe,DIRECT
+  - PROCESS-NAME,WeChat.exe,DIRECT
+  - PROCESS-NAME,WeChatAppEx.exe,DIRECT
+  - PROCESS-NAME,Weixin.exe,DIRECT
+  - PROCESS-NAME,QQ.exe,DIRECT
+  - PROCESS-NAME,TIM.exe,DIRECT
+  - PROCESS-NAME,TencentDocs.exe,DIRECT
+  - PROCESS-NAME,cloudmusic.exe,DIRECT
+
+  # 字节 / 豆包 / 钉钉 / 企业微信 / Kimi
+  - PROCESS-NAME,Doubao.exe,DIRECT
+  - PROCESS-NAME,Feishu.exe,DIRECT
+  - PROCESS-NAME,Lark.exe,DIRECT
+  - PROCESS-NAME,DingTalk.exe,DIRECT
+  - PROCESS-NAME,WXWork.exe,DIRECT
+  - PROCESS-NAME,Kimi.exe,DIRECT
+
+  # 安全与加密狗驱动 (火绒 / 深思数盾)
+  - PROCESS-NAME,HipsTray.exe,DIRECT
+  - PROCESS-NAME,HipsDaemon.exe,DIRECT
+  - PROCESS-NAME,usysdiag.exe,DIRECT
+  - PROCESS-NAME,senseshield.exe,DIRECT
+
+  # 外设与硬件控制 (雷蛇 / 雷柏 / 技嘉 / KTC)
+  - PROCESS-NAME,Razer Synapse 3.exe,DIRECT
+  - PROCESS-NAME,RazerCentralService.exe,DIRECT
+  - PROCESS-NAME,GCC.exe,DIRECT
+
   # 远程与虚拟机 (RustDesk / ToDesk / TeamSpeak / VMware)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(RustDesk|ToDesk|TeamSpeak 3 Client|VMware)\\.*\.exe$,DIRECT'
-  # 工程与设计软件 (Autodesk / Glodon / CAD / Grandsoft)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(Autodesk|Glodon|CADReader|Grandsoft)\\.*\.exe$,DIRECT'
-  # 工具软件 (HiSuite / GPSoftware / BootGraph / Tangent)
-  - 'PROCESS-PATH-REGEX,(?i).*\\(HiSuite|GPSoftware|BootGraph|Tangent)\\.*\.exe$,DIRECT'
-  # AppData 下的程序 (百度网盘 / 阿里云盘 / CDPR)
-  - 'PROCESS-PATH-REGEX,(?i).*\\AppData\\.*\\(baidu|aDrive|CD Projekt Red)\\.*\.exe$,DIRECT'
+  - PROCESS-NAME,rustdesk.exe,DIRECT
+  - PROCESS-NAME,ToDesk.exe,DIRECT
+  - PROCESS-NAME,ToDesk_Service.exe,DIRECT
+  - PROCESS-NAME,ts3client_win64.exe,DIRECT
+  - PROCESS-NAME,vmware.exe,DIRECT
+  - PROCESS-NAME,vmware-vmx.exe,DIRECT
+
+  # 工程与设计软件 (Autodesk / 广联达 / CAD快速看图 / 宏业)
+  - PROCESS-NAME,acad.exe,DIRECT
+  - PROCESS-NAME,CADReader.exe,DIRECT
+
+  # 网盘与游戏启动器 (百度网盘 / 阿里云盘 / CDPR)
+  - PROCESS-NAME,baidunetdisk.exe,DIRECT
+  - PROCESS-NAME,baidunetdiskhost.exe,DIRECT
+  - PROCESS-NAME,aDrive.exe,DIRECT
+  - PROCESS-NAME,REDprelauncher.exe,DIRECT
+  - PROCESS-NAME,REDlauncher.exe,DIRECT
+
+  # ==========================================
+  # 第二部分：目录正则兜底（捕获上述软件的子程序、更新器与未列出的冷门组件）
+  # ==========================================
+  - PROCESS-PATH-REGEX,(?i).*\\(7-Zip|Bandizip|WinRAR)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(Kingsoft|Tencent|TencentDocs|Netease)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(ByteDance|Doubao|DingDing|WXWorkLocal|Kimi|Kimi 智能助手)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(Huorong|Senselock|senseshield)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(Razer|Rapoo|GIGABYTE|KTC-Monitor Control Center)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(RustDesk|ToDesk|TeamSpeak 3 Client|VMware)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(Autodesk|Glodon|CADReader|Grandsoft)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\(HiSuite|GPSoftware|BootGraph|Tangent)\\.*\.exe$,DIRECT
+  - PROCESS-PATH-REGEX,(?i).*\\AppData\\.*\\(baidu|aDrive|Doubao|CD Projekt Red)\\.*\.exe$,DIRECT
+
   # ====== 放在所有 PROXY 规则之前 ======
   # MicrosoftEdge
   #- DOMAIN,msedge.api.cdp.microsoft.com
