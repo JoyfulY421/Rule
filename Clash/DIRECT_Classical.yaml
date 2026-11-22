@@ -1,48 +1,24 @@
 payload:
   # ====== Program Files / Program Files (x86) / 任意盘符 / 任意路径 ======
-  # 7-Zip / Bandizip / WinRAR
-  - PROCESS-PATH-REGEX,.*\\7-Zip\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Bandizip\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\WinRAR\\.*\.exe,DIRECT
-  # Kingsoft / WPS / Tencent / Netease
-  - PROCESS-PATH-REGEX,.*\\Kingsoft\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Tencent\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\TencentDocs\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Netease\\.*\.exe,DIRECT
-  # ByteDance / DingDing / WXWork / Kimi
-  - PROCESS-PATH-REGEX,.*\\ByteDance\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\DingDing\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\WXWorkLocal\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Kimi\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Kimi 智能助手\\.*\.exe,DIRECT
-  # Huorong / Senselock / senseshield
-  - PROCESS-PATH-REGEX,.*\\Huorong\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Senselock\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\senseshield\\.*\.exe,DIRECT
-  # Razer / Rapoo / GIGABYTE / KTC
-  - PROCESS-PATH-REGEX,.*\\Razer\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Rapoo\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\GIGABYTE\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\KTC-Monitor Control Center\\.*\.exe,DIRECT
-  # RustDesk / ToDesk / TeamSpeak / VMware
-  - PROCESS-PATH-REGEX,.*\\RustDesk\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\ToDesk\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\TeamSpeak 3 Client\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\VMware\\.*\.exe,DIRECT
-  # Autodesk / Glodon / CAD / Grandsoft
-  - PROCESS-PATH-REGEX,.*\\Autodesk\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Glodon\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\CADReader\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Grandsoft\\.*\.exe,DIRECT
-  # HiSuite / GPSoftware / BootGraph / Tangent
-  - PROCESS-PATH-REGEX,.*\\HiSuite\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\GPSoftware\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\BootGraph\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\Tangent\\.*\.exe,DIRECT
-  # AppData 下的程序
-  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\baidu\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\aDrive\\.*\.exe,DIRECT
-  - PROCESS-PATH-REGEX,.*\\AppData\\.*\\CD Projekt Red\\.*\.exe,DIRECT
+rules:
+  # 压缩软件 (7-Zip / Bandizip / WinRAR)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(7-Zip|Bandizip|WinRAR)\\.*\.exe$,DIRECT'
+  # 办公与社交 (Kingsoft / WPS / Tencent / Netease)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(Kingsoft|Tencent|TencentDocs|Netease)\\.*\.exe$,DIRECT'
+  # 字节 / 钉钉 / 企业微信 / Kimi
+  - 'PROCESS-PATH-REGEX,(?i).*\\(ByteDance|DingDing|WXWorkLocal|Kimi|Kimi 智能助手)\\.*\.exe$,DIRECT'
+  # 安全与加密狗驱动 (Huorong / Senselock / senseshield)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(Huorong|Senselock|senseshield)\\.*\.exe$,DIRECT'
+  # 外设与硬件控制 (Razer / Rapoo / GIGABYTE / KTC)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(Razer|Rapoo|GIGABYTE|KTC-Monitor Control Center)\\.*\.exe$,DIRECT'
+  # 远程与虚拟机 (RustDesk / ToDesk / TeamSpeak / VMware)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(RustDesk|ToDesk|TeamSpeak 3 Client|VMware)\\.*\.exe$,DIRECT'
+  # 工程与设计软件 (Autodesk / Glodon / CAD / Grandsoft)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(Autodesk|Glodon|CADReader|Grandsoft)\\.*\.exe$,DIRECT'
+  # 工具软件 (HiSuite / GPSoftware / BootGraph / Tangent)
+  - 'PROCESS-PATH-REGEX,(?i).*\\(HiSuite|GPSoftware|BootGraph|Tangent)\\.*\.exe$,DIRECT'
+  # AppData 下的程序 (百度网盘 / 阿里云盘 / CDPR)
+  - 'PROCESS-PATH-REGEX,(?i).*\\AppData\\.*\\(baidu|aDrive|CD Projekt Red)\\.*\.exe$,DIRECT'
   # ====== 放在所有 PROXY 规则之前 ======
   # MicrosoftEdge
   #- DOMAIN,msedge.api.cdp.microsoft.com
