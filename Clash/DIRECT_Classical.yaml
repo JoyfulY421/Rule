@@ -245,3 +245,4 @@ payload:
   - DOMAIN,avmark.lisect.com
   - DOMAIN-SUFFIX,smtp
   - DOMAIN-KEYWORD,aria2
+  - DOMAIN-SUFFIX,bdgroup-lab.com
